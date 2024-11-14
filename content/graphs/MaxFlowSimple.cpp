@@ -1,8 +1,8 @@
 /**
-* Author: Indy256
-* Description: Ford-Fulkerson
+ * Author: Indy256
+ * Description: Ford-Fulkerson
  * Time: O(V^2 * flow)
-*/
+ */
 
 bool augment_path(vector<vector<int>> &cap, vector<bool> &vis, int i, int t) {
     if (i == t)
