@@ -1,11 +1,11 @@
 /**
 * Author: Indy256
-* Description: desc
+* Description: Prims algorithm for minimum spanning tree that returns
+* a predecessor array of all nodes in the MST
 */
 using edge = pair<int, int>;  // (v, cost)
 using item = pair<int, int>;  // (cost, v)
 
-// Prim's algorithm in O(E*log(V)) time: https://cp-algorithms.com/graph/mst_prim.html
 tuple<long long, vector<int>> prim_mst(const vector<vector<edge>> &g) {
     size_t n = g.size();
     vector<int> pred(n, -1);
@@ -31,14 +31,4 @@ tuple<long long, vector<int>> prim_mst(const vector<vector<edge>> &g) {
         }
     }
     return {tree_cost, pred};
-}
-
-// usage example
-int main() {
-    vector<vector<edge>> graph = {{edge{1, 10}, edge{2, 5}}, {edge{0, 10}, edge{2, 10}}, {edge{1, 10}, edge{0, 5}}};
-    auto [tree_weight, pred] = prim_mst(graph);
-    cout << tree_weight << endl;
-    for (int x : pred)
-        cout << x << " ";
-    cout << endl;
 }

@@ -1,6 +1,6 @@
 /**
 * Author: Indy256
-* Description: desc
+* Description: Generate a matching between two equally sized sets given a list of preferences.
 */
 vector<int> stable_matching(vector<vector<int>> prefer_m, vector<vector<int>> prefer_w) {
     int n = prefer_m.size();

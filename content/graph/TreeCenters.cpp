@@ -1,8 +1,8 @@
 /**
 * Author: Indy256
-* Description: desc
+* Description: Returns vertex that has all its subtrees sizes <= n/2
 */
-// returns vertex that has all its subtrees sizes <= n/2
+
 int find_tree_centroid(const vector<vector<int>> &tree, int u, int p) {
     int n = tree.size();
     int cnt = 1;
@@ -20,6 +20,3 @@ int find_tree_centroid(const vector<vector<int>> &tree, int u, int p) {
     goodCenter &= n - cnt <= n / 2;
     return goodCenter ? u : -cnt;
 }
-
-// usage example
-int main() {}

@@ -1,8 +1,8 @@
 /**
 * Author: Indy256
-* Description: desc
+* Description: A compressed form of all substrings of a given string. 
+* Time: O(n) construction and O(n) memory for size n string
 */
-// https://cp-algorithms.com/string/suffix-automaton.html
 
 struct state {
     int length;

@@ -1,6 +1,8 @@
 /**
 * Author: Indy256
-* Description: desc
+* Description: Finds the centroid of a tree represented with an adjanceny matrix and decomposes it into smaller trees. 
+* A centroid of a tree is a node such that, when removed, the resulting forest has no tree with more than half the 
+* nodes of the original tree.
 */
 void calc_sizes(const vector<vector<int>> &tree, vector<int> &size, vector<bool> &deleted, int u, int p) {
     size[u] = 1;

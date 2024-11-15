@@ -3,7 +3,8 @@
  * Date: 2009-10-26
  * License: CC0
  * Source: folklore
- * Description: Disjoint-set data structure.
+ * Description: Disjoint-set data structure. Each node stores parents,
+ * and each parent stores the negative size of its set. 
  * Time: $O(\alpha(N))$
  */
 #pragma once
